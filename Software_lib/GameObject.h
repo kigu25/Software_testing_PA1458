@@ -14,7 +14,7 @@ public:
 	void listCurrentInteractionOptions(string theOptions);
 	void setCurrentInteractionOptions(string theOptions);
 	void startCurrentInteraction();
-	void abortCurrentInteraction()
+	void abortCurrentInteraction();
 
 private:
 	string objectName;
