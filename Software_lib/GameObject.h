@@ -1,15 +1,17 @@
 # pragma once
 # include <string>
+#include <list>
 
 using namespace std;
 
-class Gameobject
-{
+class Gameobject {
+
 public:
+
 	Gameobject();
 	~Gameobject();
 
-	void listinteractionTypes();
+	string listinteractionTypes();
 	void startinteraction(string theInteractionType);
 	void listCurrentInteractionOptions(string theOptions);
 	void setCurrentInteractionOptions(string theOptions);
@@ -18,4 +20,6 @@ public:
 
 private:
 	string objectName;
+	list<string> interactionList;
+	
 };
