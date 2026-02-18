@@ -15,11 +15,11 @@ Gameobject::~Gameobject()
 string Gameobject::listinteractionTypes()
 {
 	stringstream ss;
-	for (int i = 0; i < interactionList.size(); i++)
+	for (string interaction : interactionList)
 	{
-		cout << this->interactionList[i];
+		ss << interaction;
 	}
-	return ss;
+	return ss.str();
 }
 
 void Gameobject::startinteraction(string theInteractionType)
