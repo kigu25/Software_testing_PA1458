@@ -1,12 +1,17 @@
 #pragma once
+#include <iostream>
 #include <string>
+#include <vector>
+#include "GameObject.h"
 
 using namespace std;
 class Scene {
 private:
-
+	vector<Gameobject*> objects;
 public:
-	void listAvailableElements();
-	bool isAvailable(string gameElementName);
-	bool isGameObject(string gameElementName);
+	Scene();
+	~Scene();
+	void listAvailableObjects();
+	bool isAvailable(string objectName);
+	bool isGameObject(string objectName);
  };

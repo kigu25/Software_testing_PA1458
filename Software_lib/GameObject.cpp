@@ -18,7 +18,7 @@ string Gameobject::listinteractionTypes()
 	for (string interaction : interactionList)
 	{
 		ss << interaction;
-	}
+	}	
 	return ss.str();
 }
 
@@ -40,4 +40,7 @@ void Gameobject::startCurrentInteraction()
 
 void Gameobject::abortCurrentInteraction()
 {
+}
+string Gameobject::getName() const {
+	return objectName;
 }

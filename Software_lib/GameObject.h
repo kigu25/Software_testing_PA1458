@@ -17,7 +17,7 @@ public:
 	void setCurrentInteractionOptions(string theOptions);
 	void startCurrentInteraction();
 	void abortCurrentInteraction();
-
+	string getName() const;
 private:
 	string objectName;
 	list<string> interactionList;

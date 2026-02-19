@@ -1,11 +1,24 @@
 #include "Scene.h"
 
-void Scene::listAvailableElements() {
+Scene::Scene() {
 
 }
-bool Scene::isAvailable(string gameElementName) {
+Scene::~Scene() {
 
 }
-bool Scene::isGameObject(string gameElementName) {
-
+void Scene::listAvailableObjects() {
+    for (auto* object : objects) {
+        cout << object->getName() << endl;
+    }
+}
+bool Scene::isAvailable(string objectName) {
+    for (auto* object : objects) {
+        if (object->getName() == objectName) {
+            return true;
+        }
+        return false;
+    }
+}
+bool Scene::isGameObject(string objectName) {
+    
 }
