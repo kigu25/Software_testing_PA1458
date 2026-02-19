@@ -3,14 +3,19 @@
 Scene::Scene() {
 
 }
-Scene::~Scene() {
 
+Scene::~Scene() {
+    for (auto object : objects) {
+        delete object;
+    }
 }
+
 void Scene::listAvailableObjects() {
     for (auto* object : objects) {
         cout << object->getName() << endl;
     }
 }
+
 bool Scene::isAvailable(string objectName) {
     for (auto* object : objects) {
         if (object->getName() == objectName) {
