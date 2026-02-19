@@ -13,7 +13,7 @@ public:
 
 	string listinteractionTypes();
 	void startinteraction(string theInteractionType);
-	void listCurrentInteractionOptions(string theOptions);
+	void listCurrentInteractionOptions();
 	void setCurrentInteractionOptions(string theOptions);
 	void startCurrentInteraction();
 	void abortCurrentInteraction();

@@ -10,10 +10,13 @@ Game::~Game() {
 void Game::selectGameObject(string name) {
 
 	currentObj = scene1.getTheObject(name);
+
+	cout << currentObj->listinteractionTypes();
 }
 void Game::selectInteraction(string theInteraction) {
-
 	
+	currentObj->listCurrentInteractionOptions();
+
 }
 void Game::setInteractionOptions(string theOptions) {
 

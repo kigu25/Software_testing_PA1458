@@ -26,7 +26,7 @@ void Gameobject::startinteraction(string theInteractionType)
 {
 }
 
-void Gameobject::listCurrentInteractionOptions(string theOptions)
+void Gameobject::listCurrentInteractionOptions()
 {
 }
 
