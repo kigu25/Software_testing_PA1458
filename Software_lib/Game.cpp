@@ -1,7 +1,6 @@
 #include "Game.h"
 
 Game::Game() {
-	this->scene1;
 	this->currentObj = nullptr;
 }
 Game::~Game() {
