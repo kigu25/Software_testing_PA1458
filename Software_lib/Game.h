@@ -1,5 +1,6 @@
 #pragma once
 #include <string>
+#include "Scene.h"
 using namespace std;
 
 class Game
@@ -9,12 +10,13 @@ public:
 	~Game();
 
 	void selectGameObject(string name);
-	void selectInteraction(###, string theInteraction);
+	void selectInteraction(string theInteraction);
 	void setInteractionOptions(string theOptions);
 	void startInteraction();
 	void abortInteraction();
 
 private:
 	string gameName;
-	
+	Scene scene1;
+	Gameobject* currentObj;
 };

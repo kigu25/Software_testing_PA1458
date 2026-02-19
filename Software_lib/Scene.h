@@ -14,4 +14,6 @@ public:
 	void listAvailableObjects();
 	bool isAvailable(string objectName);
 	bool isGameObject(string objectName);
- };
+	Gameobject* getTheObject(string objectName);
+
+};
