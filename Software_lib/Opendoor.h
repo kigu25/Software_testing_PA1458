@@ -9,12 +9,12 @@ using namespace std;
 class Opendoor : public Interactions
 {
 public:
-	Opendoor(string interactionName, string interactionString);
+	Opendoor(string interactionName);
 	~Opendoor();
 
-	string getInteractionString();
+	string getInteraction();
 
 private:
 
-	string interactionString;
+	string interaction;
 };

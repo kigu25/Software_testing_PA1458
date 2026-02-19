@@ -10,7 +10,7 @@ public:
 	Interactions(string interactionName);
 	virtual ~Interactions();
 
-	string getInteraction();
+	virtual string getInteraction() = 0;
 
 private:
 	string interactionName;

@@ -1,16 +1,16 @@
 #include "pch.h"
 #include "Opendoor.h"
 
-Opendoor::Opendoor(string interactionName, string interactionString) : Interactions(interactionName)
+Opendoor::Opendoor(string interactionName) : Interactions(interactionName)
 {
-    this->interactionString = interactionString;
+    this->interaction = "The door is open.";
 }
 
 Opendoor::~Opendoor()
 {
 }
 
-string Opendoor::getInteractionString()
+string Opendoor::getInteraction()
 {
-    return this->interactionString;
+    return this->interaction;
 }
