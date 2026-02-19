@@ -6,6 +6,7 @@ Game::Game() {
 }
 Game::~Game() {
 
+	delete currentObj;
 }
 void Game::selectGameObject(string name) {
 
