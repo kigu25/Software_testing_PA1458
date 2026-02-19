@@ -25,7 +25,11 @@ bool Scene::isAvailable(string objectName) {
     }
 }
 bool Scene::isGameObject(string objectName) {
-    
+
+    if (isAvailable(objectName))
+    {
+        return true;
+    }
 }
 
 Gameobject* Scene::getTheObject(string objectName)
