@@ -5,7 +5,7 @@
 Gameobject::Gameobject()
 {
 	this->objectName = "";
-	this->interactionList.push_back("test");
+	this->interaction_vector.push_back("Open");
 }
 
 Gameobject::~Gameobject()
@@ -15,11 +15,12 @@ Gameobject::~Gameobject()
 string Gameobject::listinteractionTypes()
 {
 	stringstream ss;
-	for (string interaction : interactionList)
+	for (string interaction : interaction_vector)
 	{
 		ss << interaction;
 	}	
 	return ss.str();
+
 }
 
 void Gameobject::startinteraction(string theInteractionType)

@@ -13,6 +13,10 @@ public:
 	~Opendoor();
 
 	string getInteraction();
+	string breakOpenDoor();
+	string gentlyOpenDoor();
+
+	
 
 private:
 

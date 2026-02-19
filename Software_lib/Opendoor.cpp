@@ -14,3 +14,15 @@ string Opendoor::getInteraction()
 {
     return this->interaction;
 }
+
+string Opendoor::breakOpenDoor()
+{
+    this->interaction = "You've breaked opened the door.";
+    return this->interaction;
+}
+
+string Opendoor::gentlyOpenDoor()
+{
+    this->interaction = "You've gently opened the door.";
+    return this->interaction;
+}

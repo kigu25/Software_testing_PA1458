@@ -1,6 +1,7 @@
 # pragma once
 # include <string>
-#include <list>
+#include <vector>
+# include "Interactions.h"
 
 using namespace std;
 
@@ -20,6 +21,6 @@ public:
 	string getName() const;
 private:
 	string objectName;
-	list<string> interactionList;
+	vector<string> interaction_vector;
 	
 };
