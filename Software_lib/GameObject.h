@@ -9,7 +9,7 @@ class Gameobject {
 
 public:
 
-	Gameobject();
+	Gameobject(const string& name);
 	~Gameobject();
 
 	string listinteractionTypes();
