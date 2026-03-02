@@ -17,12 +17,12 @@ string Opendoor::getInteraction()
 
 string Opendoor::breakOpenDoor()
 {
-    this->interaction = "You've breaked opened the door.";
+    this->interaction = "You've broken open the door.";
     return this->interaction;
 }
 
-string Opendoor::gentlyOpenDoor()
+string Opendoor::lockpickDoor()
 {
-    this->interaction = "You've gently opened the door.";
+    this->interaction = "You've lockpicked the door.";
     return this->interaction;
 }

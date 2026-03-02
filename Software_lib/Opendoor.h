@@ -14,7 +14,7 @@ public:
 
 	string getInteraction();
 	string breakOpenDoor();
-	string gentlyOpenDoor();
+	string lockpickDoor();
 
 	
 
