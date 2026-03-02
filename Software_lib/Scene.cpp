@@ -1,7 +1,7 @@
 #include "Scene.h"
 
 Scene::Scene() {
-
+    objects.push_back(new Gameobject("Door"));
 }
 
 Scene::~Scene() {
