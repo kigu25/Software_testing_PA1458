@@ -1,4 +1,6 @@
+#include "pch.h"
 #include "GameObject.h"
+
 #include <sstream>
 #include <iostream>
 

@@ -1,4 +1,6 @@
+#include "pch.h"
 #include "Game.h"
+
 
 Game::Game() {
 	this->currentObj = nullptr;
