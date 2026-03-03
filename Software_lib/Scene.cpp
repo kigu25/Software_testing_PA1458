@@ -34,16 +34,16 @@ bool Scene::isAvailable(string objectName) {
 }
 bool Scene::isGameObject(string objectName) {
 
-    if (isAvailable(objectName))
+    Gameobject* tempPtr = getTheObject(objectName);
+
+    if (Gameobject* temp = dynamic_cast<Gameobject*>(tempPtr))
     {
         return true;
     }
+
+    return false;
 }
 
-string Scene::getName()
-{
-    return this->name;
-}
 
 Gameobject* Scene::getTheObject(string objectName)
 {
@@ -55,4 +55,10 @@ Gameobject* Scene::getTheObject(string objectName)
         }
     }
     return nullptr;
+}
+
+
+string Scene::getName()
+{
+    return this->name;
 }
