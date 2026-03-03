@@ -2,8 +2,15 @@
 #include "Scene.h"
 
 Scene::Scene() {
+    this->name = "";
     objects.push_back(new Gameobject("Door"));
 }
+
+Scene::Scene(const string& name) {
+    this->name = name;
+    objects.push_back(new Gameobject("Door"));
+}
+
 
 Scene::~Scene() {
     for (auto object : objects) {
@@ -31,6 +38,11 @@ bool Scene::isGameObject(string objectName) {
     {
         return true;
     }
+}
+
+string Scene::getName()
+{
+    return this->name;
 }
 
 Gameobject* Scene::getTheObject(string objectName)
