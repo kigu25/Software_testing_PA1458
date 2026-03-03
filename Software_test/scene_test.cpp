@@ -2,14 +2,14 @@
 #include "../Software_lib/Scene.h"
 
 
-TEST(scene_test, scene_standard_constructor) {
+TEST(scene_test, standard_constructor) {
 
 	Scene scene1;
 
 	ASSERT_EQ(scene1.getName(), "");
 }
 
-TEST(scene_test, scene_name_constructor) {
+TEST(scene_test, name_constructor) {
 
 	Scene scene1("Library");
 
@@ -17,11 +17,19 @@ TEST(scene_test, scene_name_constructor) {
 }
 
 
-TEST(scene_test, scene_available_gameOBJ) {
+TEST(scene_test, available_gameOBJ) {
 
 	Scene scene1;
 
 	ASSERT_EQ(scene1.isAvailable("Door"), true);
+}
+
+
+TEST(scene_test, is_game_obj) {
+
+	Scene scene1;
+
+	ASSERT_EQ(scene1.isGameObject("Door"), true);
 }
 
 
