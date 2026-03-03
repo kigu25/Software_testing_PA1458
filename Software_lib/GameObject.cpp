@@ -4,9 +4,9 @@
 #include <sstream>
 #include <iostream>
 
-Gameobject::Gameobject()
+Gameobject::Gameobject(const string& name)
 {
-	this->objectName = "";
+	this->objectName = name;
 	this->interaction_vector.push_back("Open");
 }
 
