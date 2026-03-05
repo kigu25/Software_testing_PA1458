@@ -42,7 +42,7 @@ TEST(scene_test, get_the_object) {
 }
 
 
-TEST(scene_test, changeTheObject) {
+TEST(scene_test, changeTheObject_route) {
 
 	Scene scene1;
 	Gameobject* Object = scene1.getTheObject("Door");
