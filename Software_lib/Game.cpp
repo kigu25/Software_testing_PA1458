@@ -18,7 +18,7 @@ void Game::selectGameObject(string name) {
 
 	currentObj = scene1.getTheObject(name);
 
-	//cout << currentObj->listinteractionTypes(); Commented-out intul we have function inplemented correctly.
+	cout << currentObj->listinteractionTypes();
 }
 
 
