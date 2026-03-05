@@ -17,7 +17,7 @@ public:
 	bool isAvailable(string objectName);
 	bool isGameObject(string objectName);
 
-	string getName(); // Function used in scene's constructor_test
+	string getSceneName(); // Function used in scene's constructor_test
 	Gameobject* getTheObject(string objectName);
 
 

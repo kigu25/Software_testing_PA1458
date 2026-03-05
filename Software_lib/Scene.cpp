@@ -58,7 +58,7 @@ Gameobject* Scene::getTheObject(string objectName)
 }
 
 
-string Scene::getName()
+string Scene::getSceneName()
 {
     return this->name;
 }

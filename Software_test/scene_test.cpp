@@ -6,14 +6,14 @@ TEST(scene_test, standard_constructor) {
 
 	Scene scene1;
 
-	ASSERT_EQ(scene1.getName(), "");
+	ASSERT_EQ(scene1.getSceneName(), "");
 }
 
 TEST(scene_test, name_constructor) {
 
 	Scene scene1("Library");
 
-	ASSERT_EQ(scene1.getName(), "Library");
+	ASSERT_EQ(scene1.getSceneName(), "Library");
 }
 
 
