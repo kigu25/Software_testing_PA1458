@@ -99,6 +99,7 @@
     <ClInclude Include="pch.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="gameObject_test.cpp" />
     <ClCompile Include="game_test.cpp" />
     <ClCompile Include="scene_test.cpp" />
     <ClCompile Include="test.cpp" />
