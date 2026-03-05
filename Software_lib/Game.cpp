@@ -24,18 +24,21 @@ void Game::selectGameObject(string name) {
 
 void Game::selectInteraction(string theInteraction) {
 	
-	currentObj->listCurrentInteractionOptions();
+	this->currentInteraction = theInteraction;
 
 }
 
 
-void Game::setInteractionOptions(string theOptions) {
+void Game::setInteractionOption(string theOption) {
+
+	this->currentOption = theOption;
 
 }
 
 
-void Game::startInteraction() {
-
+void Game::startInteraction(Gameobject* theObject, string theInteraction, string theOption) {
+	
+	scene1.
 }
 
 

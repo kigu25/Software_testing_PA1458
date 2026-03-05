@@ -11,14 +11,16 @@ public:
 
 	void selectGameObject(string name);
 	void selectInteraction(string theInteraction);
-	void setInteractionOptions(string theOptions);
-	void startInteraction();
+	void setInteractionOption(string theOption);
+	void startInteraction(Gameobject* theObject, string theInteraction, string theOption);
 	void abortInteraction();
 
 	Gameobject* getCurrentObj();
 
 private:
-	string gameName;
+
 	Scene scene1;
 	Gameobject* currentObj;
+	string currentInteraction;
+	string currentOption;
 };
