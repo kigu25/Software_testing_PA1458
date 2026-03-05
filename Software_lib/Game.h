@@ -15,6 +15,8 @@ public:
 	void startInteraction();
 	void abortInteraction();
 
+	Gameobject* getCurrentObj();
+
 private:
 	string gameName;
 	Scene scene1;

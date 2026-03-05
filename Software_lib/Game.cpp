@@ -30,3 +30,8 @@ void Game::startInteraction() {
 void Game::abortInteraction() {
 
 }
+
+Gameobject* Game::getCurrentObj()
+{
+	return currentObj;
+}
