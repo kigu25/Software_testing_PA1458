@@ -20,7 +20,7 @@ Gameobject::~Gameobject()
 {
 }
 
-string Gameobject::listinteractionTypes()
+string Gameobject::listinteractionTypes() // Bör eventuellt ändra returtyp till typ <vector*> eller något för att få ett bättre test med index istället för string
 {
 	stringstream ss;
 	for (Interactions* interaction : interaction_vector)
@@ -66,6 +66,14 @@ void Gameobject::startCurrentInteraction()
 void Gameobject::abortCurrentInteraction()
 {
 }
+
+
+bool Gameobject::getIsOpen()
+{
+	return this->isOpen;
+}
+
+
 string Gameobject::getName() const {
 	return objectName;
 }

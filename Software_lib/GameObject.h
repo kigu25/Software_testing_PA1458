@@ -21,7 +21,7 @@ public:
 	void startCurrentInteraction();
 	void abortCurrentInteraction();
 
-
+	bool getIsOpen();
 	string getName() const;
 
 
