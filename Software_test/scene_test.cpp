@@ -40,3 +40,12 @@ TEST(scene_test, get_the_object) {
 
 	ASSERT_NE(object, nullptr); // Make sure the pointer is NOT nullptr (_NE)
 }
+
+
+TEST(scene_test, changeTheObject) {
+
+	Scene scene1;
+	Gameobject* Object = scene1.getTheObject("Door");
+
+	ASSERT_EQ(scene1.doTheInteraction(Object, "Open", "placeholder"), true);
+}

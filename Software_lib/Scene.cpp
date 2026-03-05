@@ -44,6 +44,18 @@ bool Scene::isGameObject(string objectName) {
     return false;
 }
 
+bool Scene::doTheInteraction(Gameobject* theObject, string theInteraction, string theOption)
+{
+    if (theObject->startinteraction(theInteraction, theOption))
+    {
+        cout << "The object has changed." << endl;
+        return true;
+    }
+  
+    cout << "The object has NOT changed." << endl;
+    return false;  
+}
+
 
 Gameobject* Scene::getTheObject(string objectName)
 {

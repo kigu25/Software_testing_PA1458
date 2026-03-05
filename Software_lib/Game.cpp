@@ -37,8 +37,8 @@ void Game::setInteractionOption(string theOption) {
 
 
 void Game::startInteraction(Gameobject* theObject, string theInteraction, string theOption) {
-	
-	scene1.
+
+	scene1.doTheInteraction(theObject, theInteraction, theOption);
 }
 
 

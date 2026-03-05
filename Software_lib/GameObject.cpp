@@ -1,5 +1,7 @@
 #include "pch.h"
 #include "GameObject.h"
+#include "Opendoor.h"
+# include "CloseDoor.h"
 
 #include <sstream>
 #include <iostream>
@@ -7,7 +9,11 @@
 Gameobject::Gameobject(const string& name)
 {
 	this->objectName = name;
-	this->interaction_vector.push_back("Open");
+
+	this->isOpen = false;
+
+	this->interaction_vector.push_back(new Opendoor("open"));
+	this->interaction_vector.push_back(new closeDoor("close"));
 }
 
 Gameobject::~Gameobject()
@@ -17,16 +23,32 @@ Gameobject::~Gameobject()
 string Gameobject::listinteractionTypes()
 {
 	stringstream ss;
-	for (string interaction : interaction_vector)
+	for (Interactions* interaction : interaction_vector)
 	{
-		ss << interaction;
+		ss << interaction->getInteraction();
 	}	
 	return ss.str();
 
 }
 
-void Gameobject::startinteraction(string theInteractionType)
+bool Gameobject::startinteraction(string theInteraction, string theOption)
 {
+	if (theInteraction == "Open")
+	{
+		this->isOpen = true;
+
+		return true;
+	}
+
+	if (theInteraction == "Close")
+	{
+		this->isOpen = false;
+		cout << theOption;
+
+		return true;
+	}
+
+	return false;
 }
 
 void Gameobject::listCurrentInteractionOptions()

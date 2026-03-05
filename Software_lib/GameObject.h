@@ -14,19 +14,22 @@ public:
 
 	string listinteractionTypes();
 
-	void startinteraction(string theInteractionType);
+	bool startinteraction(string theInteraction, string theOption);
 	void listCurrentInteractionOptions();
 
 	void setCurrentInteractionOptions(string theOptions);
 	void startCurrentInteraction();
 	void abortCurrentInteraction();
 
+
 	string getName() const;
 
 
 
 private:
-
 	string objectName;
-	vector<string> interaction_vector;
+
+	bool isOpen;
+	
+	vector<Interactions*> interaction_vector;
 };
