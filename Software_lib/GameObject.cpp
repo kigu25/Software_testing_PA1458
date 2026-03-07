@@ -12,8 +12,8 @@ Gameobject::Gameobject(const string& name)
 
 	this->isOpen = false;
 
-	this->interaction_vector.push_back(new Opendoor("open"));
-	this->interaction_vector.push_back(new closeDoor("close"));
+	this->interaction_vector.push_back(new Opendoor("Open"));
+	this->interaction_vector.push_back(new closeDoor("Close"));
 }
 
 Gameobject::~Gameobject()
