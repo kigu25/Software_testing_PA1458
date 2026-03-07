@@ -13,6 +13,8 @@ public:
 	~closeDoor();
 
 	string getInteraction();
+	string slamDoorShut();
+	string gentlyCloseDoor();
 
 private:
 
