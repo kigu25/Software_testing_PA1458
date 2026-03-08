@@ -14,7 +14,6 @@ public:
 	void setInteractionOption(string theOption);
 	void startInteraction(Gameobject* theObject, string theInteraction, string theOption);
 	void abortInteraction();
-	void Game::initiateConversation(string theCharacter);
 
 	string getCurrentOption();
 
