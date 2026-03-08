@@ -29,8 +29,8 @@ bool Scene::isAvailable(string objectName) {
         if (object->getName() == objectName) {
             return true;
         }
-        return false;
     }
+    return false;
 }
 bool Scene::isGameObject(string objectName) {
 

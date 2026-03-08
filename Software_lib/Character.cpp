@@ -1,3 +1,4 @@
+#include "pch.h"
 #include "Character.h"
 
 Character::Character(const string& name) {
@@ -11,10 +12,10 @@ string Character::getName() const {
 }
 
 string Character::getInitialGreeting() {
-
+    return "";
 }
 
 string Character::query(string safeQuery) {
-
+    return "";
 }
 
