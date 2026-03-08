@@ -139,6 +139,7 @@
     <ClInclude Include="framework.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="GameObject.h" />
+    <ClInclude Include="InputSanitiser.h" />
     <ClInclude Include="Interactions.h" />
     <ClInclude Include="Opendoor.h" />
     <ClInclude Include="pch.h" />
@@ -148,6 +149,7 @@
     <ClCompile Include="CloseDoor.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="GameObject.cpp" />
+    <ClCompile Include="InputSanitiser.cpp" />
     <ClCompile Include="Interactions.cpp" />
     <ClCompile Include="Opendoor.cpp" />
     <ClCompile Include="pch.cpp">
