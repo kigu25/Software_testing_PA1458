@@ -39,6 +39,9 @@
     <ClInclude Include="CloseDoor.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="InputSanitiser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Software_lib.cpp">
@@ -63,6 +66,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="CloseDoor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="InputSanitiser.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

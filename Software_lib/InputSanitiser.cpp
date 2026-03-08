@@ -1,0 +1,21 @@
+#include "pch.h"
+#include "InputSanitiser.h"
+
+InputSanitiser::InputSanitiser()
+{
+}
+
+InputSanitiser::~InputSanitiser()
+{
+}
+
+string InputSanitiser::sanitiseInput(string InputQuery)
+{
+	if (InputQuery != "" || InputQuery.length() < 3)
+	{
+		return InputQuery;
+	}
+	else {
+		return "";
+	}
+}
