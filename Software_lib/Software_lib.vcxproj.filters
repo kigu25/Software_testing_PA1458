@@ -45,17 +45,19 @@
     <ClInclude Include="Character.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-<<<<<<< HEAD
     <ClInclude Include="CharacterRepository.h">
-=======
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="PhoneBook.h">
->>>>>>> 1ad83dc644861071e03114c3cd4af7ad40c9352c
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="InteractionEngine.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="PlotEngine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UserInterface.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -90,18 +92,19 @@
     <ClCompile Include="Character.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-<<<<<<< HEAD
-<<<<<<< HEAD
     <ClCompile Include="CharacterRepository.cpp">
-=======
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="PhoneBook.cpp">
->>>>>>> 1ad83dc644861071e03114c3cd4af7ad40c9352c
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="InteractionEngine.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="PlotEngine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UserInterface.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
