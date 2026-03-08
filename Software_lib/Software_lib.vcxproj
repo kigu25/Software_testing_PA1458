@@ -142,10 +142,12 @@
     <ClInclude Include="Game.h" />
     <ClInclude Include="GameObject.h" />
     <ClInclude Include="InputSanitiser.h" />
+    <ClInclude Include="InteractionEngine.h" />
     <ClInclude Include="Interactions.h" />
     <ClInclude Include="Opendoor.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="PhoneBook.h" />
+    <ClInclude Include="PlotEngine.h" />
     <ClInclude Include="Scene.h" />
     <ClInclude Include="UserInterface.h" />
   </ItemGroup>
@@ -156,6 +158,7 @@
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="GameObject.cpp" />
     <ClCompile Include="InputSanitiser.cpp" />
+    <ClCompile Include="InteractionEngine.cpp" />
     <ClCompile Include="Interactions.cpp" />
     <ClCompile Include="Opendoor.cpp" />
     <ClCompile Include="pch.cpp">
@@ -165,6 +168,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="PhoneBook.cpp" />
+    <ClCompile Include="PlotEngine.cpp" />
     <ClCompile Include="Scene.cpp" />
     <ClCompile Include="Software_lib.cpp" />
   </ItemGroup>
