@@ -66,6 +66,7 @@ void Gameobject::setCurrentInteractionOptions(string theOptions)
 
 void Gameobject::startCurrentInteraction()
 {
+	currentInteraction->execute(currentOption);
 }
 
 void Gameobject::abortCurrentInteraction()
