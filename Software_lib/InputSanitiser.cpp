@@ -11,7 +11,7 @@ InputSanitiser::~InputSanitiser()
 
 string InputSanitiser::sanitiseInput(string InputQuery)
 {
-	if (InputQuery != "" || InputQuery.length() < 3)
+	if (InputQuery.length() > 50 || InputQuery.length() < 3)
 	{
 		return InputQuery;
 	}
