@@ -61,6 +61,7 @@ void Gameobject::listCurrentInteractionOptions()
 
 void Gameobject::setCurrentInteractionOptions(string theOptions)
 {
+	currentOption = theOptions;
 }
 
 void Gameobject::startCurrentInteraction()
