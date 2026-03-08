@@ -8,7 +8,6 @@ using namespace std;
 class Gameobject {
 
 public:
-
 	Gameobject(const string& name);
 	~Gameobject();
 
@@ -23,9 +22,6 @@ public:
 
 	bool getIsOpen();
 	string getName() const;
-
-
-
 private:
 	string objectName;
 

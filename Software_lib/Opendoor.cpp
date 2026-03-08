@@ -3,7 +3,8 @@
 
 Opendoor::Opendoor(string interactionName) : Interactions(interactionName)
 {
-    
+    options.push_back("Break");
+    options.push_back("Lockpick");
 }
 
 Opendoor::~Opendoor()

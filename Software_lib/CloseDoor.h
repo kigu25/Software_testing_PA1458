@@ -12,11 +12,5 @@ public:
 	closeDoor(string interactionName);
 	~closeDoor();
 
-	string getInteraction();
-	string slamDoorShut();
-	string gentlyCloseDoor();
-
-private:
-
-	string interaction;
+	bool execute(string option) override;
 };

@@ -10,9 +10,9 @@ closeDoor::~closeDoor()
 {
 }
 
-string closeDoor::getInteraction()
+bool closeDoor::execute(string option)
 {
-    return this->interaction;
+
 }
 
 string closeDoor::slamDoorShut()

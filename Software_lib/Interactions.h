@@ -15,7 +15,7 @@ public:
 	vector<string> getOptions();
 
 	virtual bool execute(string option) = 0;
-private:
+protected:
 	string interactionName;
 	vector<string>options;
 };
