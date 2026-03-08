@@ -53,6 +53,10 @@ bool Gameobject::startinteraction(string theInteraction, string theOption)
 
 void Gameobject::listCurrentInteractionOptions()
 {
+	for (string option : currentInteraction->getOptions())
+	{
+		cout << option << endl;
+	}
 }
 
 void Gameobject::setCurrentInteractionOptions(string theOptions)

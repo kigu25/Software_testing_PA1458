@@ -28,4 +28,7 @@ private:
 	bool isOpen;
 	
 	vector<Interactions*> interaction_vector;
+
+	Interactions* currentInteraction;
+	string currentOption;
 };
