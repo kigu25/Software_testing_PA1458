@@ -5,6 +5,8 @@
 
 Game::Game() {
 	this->currentObj = nullptr;
+	this->currentInteraction = "";
+	this->currentOption = "";
 
 }
 
@@ -45,6 +47,11 @@ void Game::startInteraction(Gameobject* theObject, string theInteraction, string
 
 void Game::abortInteraction() {
 
+}
+
+string Game::getCurrentOption()
+{
+	return this->currentOption;
 }
 
 

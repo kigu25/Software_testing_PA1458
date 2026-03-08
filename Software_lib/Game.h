@@ -15,6 +15,8 @@ public:
 	void startInteraction(Gameobject* theObject, string theInteraction, string theOption);
 	void abortInteraction();
 
+	string getCurrentOption();
+
 	Gameobject* getCurrentObj();
 
 private:
