@@ -1,6 +1,7 @@
 #pragma once
 #include <string>
 #include "Scene.h"
+#include "PhoneBook.h"
 using namespace std;
 
 class Game
@@ -14,6 +15,7 @@ public:
 	void setInteractionOption(string theOption);
 	void startInteraction(Gameobject* theObject, string theInteraction, string theOption);
 	void abortInteraction();
+	void initiateConversation(string theCharacter);
 
 	string getCurrentOption();
 
@@ -25,4 +27,5 @@ private:
 	Gameobject* currentObj;
 	string currentInteraction;
 	string currentOption;
+	PhoneBook phonebook;
 };
