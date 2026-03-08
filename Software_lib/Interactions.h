@@ -1,6 +1,7 @@
 #pragma once
 #include <string>
 #include <iostream>
+#include <vector>
 
 using namespace std;
 
@@ -10,9 +11,11 @@ public:
 	Interactions(string interactionName);
 	virtual ~Interactions();
 
-	virtual string getInteraction() = 0;
+	string getInteraction();
+	vector<string> getOptions();
 
+	virtual bool execute(string option) = 0;
 private:
 	string interactionName;
-
+	vector<string>options;
 };

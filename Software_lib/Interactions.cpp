@@ -14,3 +14,8 @@ string Interactions::getInteraction()
 {
     return this->interactionName;
 }
+
+vector<string> Interactions::getOptions()
+{
+    return options;
+}

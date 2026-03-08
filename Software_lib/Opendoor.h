@@ -12,13 +12,5 @@ public:
 	Opendoor(string interactionName);
 	~Opendoor();
 
-	string getInteraction();
-	string breakOpenDoor();
-	string lockpickDoor();
-
-	
-
-private:
-
-	string interaction;
+	bool execute(string option) override;
 };

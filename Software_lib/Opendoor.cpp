@@ -3,26 +3,26 @@
 
 Opendoor::Opendoor(string interactionName) : Interactions(interactionName)
 {
-    this->interaction = "The door is open.";
+    
 }
 
 Opendoor::~Opendoor()
 {
 }
 
-string Opendoor::getInteraction()
+bool Opendoor::execute(string option)
 {
-    return this->interaction;
-}
+    if (option == "Break")
+    {
+        cout << "You've broken open the door." << endl;
+        return true;
+    }
 
-string Opendoor::breakOpenDoor()
-{
-    this->interaction = "You've broken open the door.";
-    return this->interaction;
-}
+    if (option == "Lockpick")
+    {
+        cout << "You've lockpicked the door." << endl;
+        return true;
+    }
 
-string Opendoor::lockpickDoor()
-{
-    this->interaction = "You've lockpicked the door.";
-    return this->interaction;
+    return false;
 }
