@@ -25,4 +25,5 @@ private:
 	Gameobject* currentObj;
 	string currentInteraction;
 	string currentOption;
+	PhoneBook phonebook;
 };

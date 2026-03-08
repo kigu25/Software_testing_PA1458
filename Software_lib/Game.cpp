@@ -49,6 +49,18 @@ void Game::abortInteraction() {
 
 }
 
+void Game::initiateConversation(string theCharacter) {
+	if (!scene1.isAvailable(theCharacter)) {
+		cout << "Character is not available!" << endl;
+		return;
+	}
+
+	string contact = phonebook.getContactMethod(theCharacter);
+	if (contact.empty()) {
+		return;
+	}
+}
+
 string Game::getCurrentOption()
 {
 	return this->currentOption;
