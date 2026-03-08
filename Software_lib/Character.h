@@ -13,4 +13,5 @@ public:
     string getName() const;
     string getInitialGreeting();
     string query(string safeQuery);
+
 };

@@ -17,3 +17,4 @@ string Character::getInitialGreeting() {
 string Character::query(string safeQuery) {
 
 }
+
