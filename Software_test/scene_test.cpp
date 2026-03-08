@@ -49,3 +49,38 @@ TEST(scene_test, changeTheObject_route) {
 
 	ASSERT_EQ(scene1.doTheInteraction(Object, "Open", "Lockpick"), true);
 }
+
+
+// Negative path
+TEST(scene_negative, available_gameOBJ) {
+
+	Scene scene1;
+
+	ASSERT_EQ(scene1.isAvailable("Car"), false);
+}
+
+
+TEST(scene_negative, is_game_obj) {
+
+	Scene scene1;
+
+	ASSERT_EQ(scene1.isGameObject("Car"), false);
+}
+
+
+TEST(scene_negative, get_the_object) {
+
+	Scene scene1;
+	Gameobject* object = scene1.getTheObject("Car");
+
+	ASSERT_EQ(object, nullptr);
+}
+
+
+TEST(scene_negative, changeTheObject_route) {
+
+	Scene scene1;
+	Gameobject* Object = scene1.getTheObject("Door");
+
+	ASSERT_EQ(scene1.doTheInteraction(Object, "Fly", "Fast"), false);
+}

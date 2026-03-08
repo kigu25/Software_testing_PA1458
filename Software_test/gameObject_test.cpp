@@ -28,3 +28,27 @@ TEST(GameObject_test, changeStateOfObject) {
 	Obj.startinteraction("Close", "Gently");
 	ASSERT_EQ(Obj.getIsOpen(), false);
 }
+
+
+
+
+// Negative path
+TEST(GameObject_negative, changeStateOfObject) {
+
+	Gameobject Obj("Door2");
+
+	Obj.startinteraction("Swim", "Slow");
+	ASSERT_EQ(Obj.getIsOpen(), false);
+
+	Obj.startinteraction("Fly", "High");
+	ASSERT_EQ(Obj.getIsOpen(), false);
+}
+
+
+
+TEST(GameObject_negative, ListInteractionTypes) {
+
+	Gameobject Obj("Door2");
+
+	ASSERT_NE(Obj.listinteractionTypes(), "FlySwimFastCar"); 
+}
