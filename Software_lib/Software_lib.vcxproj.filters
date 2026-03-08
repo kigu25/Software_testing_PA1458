@@ -52,6 +52,9 @@
 >>>>>>> 1ad83dc644861071e03114c3cd4af7ad40c9352c
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="UserInterface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Software_lib.cpp">
@@ -85,11 +88,14 @@
       <Filter>Source Files</Filter>
     </ClCompile>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <ClCompile Include="CharacterRepository.cpp">
 =======
     <ClCompile Include="PhoneBook.cpp">
 >>>>>>> 1ad83dc644861071e03114c3cd4af7ad40c9352c
       <Filter>Source Files</Filter>
     </ClCompile>
+=======
+>>>>>>> ff6c62d4a424314371e3f95d9c23cf0cb91d4b77
   </ItemGroup>
 </Project>

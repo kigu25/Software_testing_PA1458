@@ -147,6 +147,7 @@
     <ClInclude Include="pch.h" />
     <ClInclude Include="PhoneBook.h" />
     <ClInclude Include="Scene.h" />
+    <ClInclude Include="UserInterface.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Character.cpp" />
@@ -166,6 +167,7 @@
     <ClCompile Include="PhoneBook.cpp" />
     <ClCompile Include="Scene.cpp" />
     <ClCompile Include="Software_lib.cpp" />
+    <ClCompile Include="UserInterface.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
