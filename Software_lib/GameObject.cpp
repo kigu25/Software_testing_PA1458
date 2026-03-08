@@ -37,6 +37,14 @@ bool Gameobject::startinteraction(string theInteraction, string theOption)
 	{
 		if (interaction->getInteraction() == theInteraction)
 		{
+			if (theInteraction == "Open")
+			{
+				this->isOpen = true;
+			}
+			if (theInteraction == "Close")
+			{
+				this->isOpen = false;
+			}
 			return interaction->execute(theOption);
 		}
 	}
