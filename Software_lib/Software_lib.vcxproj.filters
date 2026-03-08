@@ -45,7 +45,11 @@
     <ClInclude Include="Character.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+<<<<<<< HEAD
+    <ClInclude Include="CharacterRepository.h">
+=======
     <ClInclude Include="PhoneBook.h">
+>>>>>>> 1ad83dc644861071e03114c3cd4af7ad40c9352c
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="InteractionEngine.h">
@@ -86,7 +90,12 @@
     <ClCompile Include="Character.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+<<<<<<< HEAD
+<<<<<<< HEAD
+    <ClCompile Include="CharacterRepository.cpp">
+=======
     <ClCompile Include="PhoneBook.cpp">
+>>>>>>> 1ad83dc644861071e03114c3cd4af7ad40c9352c
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="InteractionEngine.cpp">

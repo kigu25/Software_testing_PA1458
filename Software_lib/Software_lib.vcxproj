@@ -136,6 +136,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Character.h" />
+    <ClInclude Include="CharacterRepository.h" />
     <ClInclude Include="CloseDoor.h" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="Game.h" />
@@ -148,9 +149,11 @@
     <ClInclude Include="PhoneBook.h" />
     <ClInclude Include="PlotEngine.h" />
     <ClInclude Include="Scene.h" />
+    <ClInclude Include="UserInterface.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Character.cpp" />
+    <ClCompile Include="CharacterRepository.cpp" />
     <ClCompile Include="CloseDoor.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="GameObject.cpp" />
@@ -168,6 +171,7 @@
     <ClCompile Include="PlotEngine.cpp" />
     <ClCompile Include="Scene.cpp" />
     <ClCompile Include="Software_lib.cpp" />
+    <ClCompile Include="UserInterface.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
