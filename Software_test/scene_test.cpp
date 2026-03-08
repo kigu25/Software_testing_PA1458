@@ -47,5 +47,5 @@ TEST(scene_test, changeTheObject_route) {
 	Scene scene1;
 	Gameobject* Object = scene1.getTheObject("Door");
 
-	ASSERT_EQ(scene1.doTheInteraction(Object, "Open", "placeholder"), true);
+	ASSERT_EQ(scene1.doTheInteraction(Object, "Open", "Lockpick"), true);
 }

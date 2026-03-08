@@ -14,7 +14,7 @@ TEST(GameObject_test, ListInteractionTypes) {
 
 	Gameobject Obj("Door2");
 
-	ASSERT_EQ(Obj.listinteractionTypes(), "The door is open.The door is closed."); // We need to write the asserted line in this weired way since the listInteractionTypes() returns a string, mby change to return vector?
+	ASSERT_EQ(Obj.listinteractionTypes(), "OpenClose"); // We need to write the asserted line in this weired way since the listInteractionTypes() returns a string, mby change to return vector?
 }
 
 
@@ -22,9 +22,9 @@ TEST(GameObject_test, changeStateOfObject) {
 
 	Gameobject Obj("Door2");
 
-	Obj.startinteraction("Open", "PlaceHolder");
+	Obj.startinteraction("Open", "Break");
 	ASSERT_EQ(Obj.getIsOpen(), true);
 
-	Obj.startinteraction("Close", "PlaceHolder");
+	Obj.startinteraction("Close", "Gently");
 	ASSERT_EQ(Obj.getIsOpen(), false);
 }
