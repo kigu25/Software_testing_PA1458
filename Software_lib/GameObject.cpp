@@ -71,6 +71,8 @@ void Gameobject::startCurrentInteraction()
 
 void Gameobject::abortCurrentInteraction()
 {
+	currentInteraction = nullptr;
+	currentOption = "";
 }
 
 
