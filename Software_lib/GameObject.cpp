@@ -33,19 +33,12 @@ string Gameobject::listinteractionTypes() // Bör eventuellt ändra returtyp till 
 
 bool Gameobject::startinteraction(string theInteraction, string theOption)
 {
-	if (theInteraction == "Open")
+	for (auto interaction : interaction_vector)
 	{
-		this->isOpen = true;
-
-		return true;
-	}
-
-	if (theInteraction == "Close")
-	{
-		this->isOpen = false;
-		cout << theOption;
-
-		return true;
+		if (interaction->getInteraction() == theInteraction)
+		{
+			return interaction->execute(theOption);
+		}
 	}
 
 	return false;
