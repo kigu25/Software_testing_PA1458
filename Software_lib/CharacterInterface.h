@@ -13,7 +13,7 @@ public:
 	~Characterinterface();
 
 	void create(string theCharacter);
-	void activate();
+	string activate();
 
 
 private:

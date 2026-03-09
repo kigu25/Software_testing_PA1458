@@ -15,6 +15,8 @@ void Characterinterface::create(string theCharacter)
 	this->currentlyActive = charRepository.getCharacter(theCharacter);
 }
 
-void Characterinterface::activate()
+string Characterinterface::activate()
 {
+	string response = this->currentlyActive->getInitialGreeting();
+	return response;
 }
