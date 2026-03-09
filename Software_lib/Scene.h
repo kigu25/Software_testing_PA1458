@@ -22,6 +22,8 @@ public:
 	string getSceneName(); // Function used in scene's constructor_test
 	Gameobject* getTheObject(string objectName);
 
+	void addToInventory(Gameobject* obj);
+
 
 private:
 

@@ -26,6 +26,7 @@ public:
 private:
 
 	Scene scene1;
+	Scene Inventory;
 	Gameobject* currentObj;
 	string currentInteraction;
 	string currentOption;
