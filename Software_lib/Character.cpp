@@ -12,7 +12,7 @@ string Character::getName() const {
 }
 
 string Character::getInitialGreeting() {
-    return "";
+    return "Hello my name is " + this->characterName;
 }
 
 string Character::query(string safeQuery) {

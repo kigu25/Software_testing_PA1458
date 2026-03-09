@@ -62,6 +62,8 @@ void Game::initiateConversation(string theCharacter) {
 	}
 	else {
 		CharInterface.create(theCharacter);
+		string response = CharInterface.activate();
+		ui.showMessage(response);
 	}
 }
 
