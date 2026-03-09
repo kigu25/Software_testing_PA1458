@@ -1,5 +1,4 @@
 #include "pch.h"
-
 #include "Game.h"
 
 
@@ -8,6 +7,7 @@ Game::Game() {
 	this->currentInteraction = "";
 	this->currentOption = "";
 
+	Inventory.addToInventory(new Gameobject("Radio"));
 }
 
 

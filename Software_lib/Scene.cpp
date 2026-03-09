@@ -69,6 +69,9 @@ Gameobject* Scene::getTheObject(string objectName)
     return nullptr;
 }
 
+void Scene::addToInventory(Gameobject* obj) {
+    objects.push_back(obj);
+}
 
 string Scene::getSceneName()
 {
