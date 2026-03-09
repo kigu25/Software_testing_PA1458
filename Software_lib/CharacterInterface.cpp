@@ -44,7 +44,7 @@ string Characterinterface::activate()
 			continue;
 		}
 
-		string theResponse = currentlyActive->query(safeQuery);
+		string formatted = currentlyActive->query(safeQuery);
 
 		cout << formatted << endl;
 	}
