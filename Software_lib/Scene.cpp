@@ -4,11 +4,15 @@
 Scene::Scene() {
     this->name = "";
     objects.push_back(new Gameobject("Door"));
+    Characters.push_back("Goblin");
+    Characters.push_back("Batman");
 }
 
 Scene::Scene(const string& name) {
     this->name = name;
     objects.push_back(new Gameobject("Door"));
+    Characters.push_back("Goblin");
+    Characters.push_back("Batman");
 }
 
 
@@ -41,6 +45,18 @@ bool Scene::isGameObject(string objectName) {
         return true;
     }
 
+    return false;
+}
+
+bool Scene::isCharacterAvailable(string CharacterName)
+{
+    for (int i = 0; i < Characters.size(); i++)
+    {
+        if (Characters[i] == CharacterName)
+        {
+            return true;
+        }
+    }
     return false;
 }
 

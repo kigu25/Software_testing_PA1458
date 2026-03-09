@@ -17,6 +17,8 @@ public:
 	bool isAvailable(string objectName);
 	bool isGameObject(string objectName);
 
+	bool isCharacterAvailable(string CharacterName);
+
 	bool doTheInteraction(Gameobject* theObject, string theInteraction, string theOption);
 
 	string getSceneName(); // Function used in scene's constructor_test
@@ -27,7 +29,8 @@ public:
 
 private:
 
-	vector<Gameobject*> objects;
+	vector <Gameobject*> objects;
+	vector <string> Characters;
 
 	string name; // Variabel used in scene's constructor_test
 };

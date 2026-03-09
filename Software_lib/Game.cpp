@@ -51,7 +51,7 @@ void Game::abortInteraction() {
 }
 
 void Game::initiateConversation(string theCharacter) {
-	if (!scene1.isAvailable(theCharacter)) {
+	if (!scene1.isCharacterAvailable(theCharacter)) {
 		ui.showMessage(theCharacter + " is not available!");
 		return;
 	}

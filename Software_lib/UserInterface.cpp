@@ -22,7 +22,7 @@ int Userinterface::showMainMenu()
 
 	cout << "0. Exit program" << endl;
 
-	cout << ": ";
+	cout << ":";
 
 	cin >> menuChoice;
 	return menuChoice;
