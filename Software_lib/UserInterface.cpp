@@ -22,9 +22,9 @@ int Userinterface::showMainMenu()
 
 	cout << "2. Interact with object" << endl;
 
-	cout << "0. Exit program" << endl;
+	cout << '\n' << "0. Exit program" << endl;
 
-	cout << ":";
+	cout << '\n' << ":";
 
 	cin >> menuChoice;
 	return menuChoice;
@@ -56,15 +56,18 @@ string Userinterface::userInputsChoice()
 
 void Userinterface::showMessage(string theString)
 {
-	cout << theString << endl;
-	cout << "\n" << "Press enter to continue...";
-	cin.ignore(1000, '\n');
+	cout << '\n' << theString << '\n' << endl;
+}
+
+void Userinterface::waitForEnter()
+{
+	cout << "Press enter to continue...";
+	cin.ignore(numeric_limits<streamsize>::max(), '\n');
 	cin.get();
 }
 
 
 void Userinterface::clearScreen()
 {
-
 	cout << "\033[3J\033[H\033[2J";
 }

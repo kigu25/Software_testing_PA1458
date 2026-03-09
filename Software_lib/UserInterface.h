@@ -1,6 +1,7 @@
 #pragma once
 #include <string>
 #include <iostream>
+#include <limits>
 using namespace std;
 
 class Userinterface {
@@ -18,6 +19,8 @@ public:
 	string userInputsChoice();
 
 	void showMessage(string theString);
+
+	void waitForEnter();
 
 private:
 

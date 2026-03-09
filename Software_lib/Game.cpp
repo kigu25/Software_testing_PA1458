@@ -120,6 +120,7 @@ void Game::handleChoice(int choice)
 		this->currentOption = ui.userInputsChoice();
 
 		currentObj->startinteraction(currentInteraction, currentOption);
+		ui.waitForEnter();
 
 		break;
 	}

@@ -15,7 +15,7 @@ bool Opendoor::execute(string option)
 {
     if (option == "Break")
     {
-        cout << "You've broken open the door." << endl;
+        cout << "You've break opened the door." << endl;
         return true;
     }
 
