@@ -12,8 +12,29 @@ InteractionEngine::~InteractionEngine()
 
 
 string InteractionEngine::parseQuery(string theQuery) {
-	return "";
+	if (theQuery == "hello" || theQuery == "hi")
+		return "greetings";
+
+	if (theQuery == "goodbye" || theQuery == "bye")
+		return "farewell";
+
+	if (theQuery == "help")
+		return "I will help you!";
+
+	return "unknown";
 };
 string InteractionEngine::formatResponse(string theResponse, string nextConversationOptions) {
-	return "";
+	string formatted;
+
+	formatted += "NPC: ";
+	formatted += theResponse;
+	formatted += "\n";
+
+	if (nextConversationOptions != "")
+	{
+		formatted += "\nOptions:\n";
+		formatted += nextConversationOptions;
+	}
+
+	return formatted;
 };
