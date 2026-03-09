@@ -4,10 +4,11 @@ using namespace std;
 
 class PlotEngine {
 private:
-
+	string currentPlot;
 public:
 	PlotEngine();
 	~PlotEngine();
 
-	string getPlotState();
+	void setPlotState(const string& plot);
+	string getPlotState() const;
 };

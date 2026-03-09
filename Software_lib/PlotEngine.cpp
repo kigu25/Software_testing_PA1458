@@ -2,13 +2,18 @@
 #include "PlotEngine.h"
 
 PlotEngine::PlotEngine() {
-	
+	currentPlot = "No plot set.";
 }
+
 PlotEngine::~PlotEngine() {
 
 }
 
-string PlotEngine::getPlotState() {
+void PlotEngine::setPlotState(const string& plot)
+{
+	currentPlot = plot;
+}
 
-	return "";
+string PlotEngine::getPlotState() const{
+	return currentPlot;
 }
