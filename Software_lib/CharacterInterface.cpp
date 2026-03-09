@@ -3,6 +3,7 @@
 
 Characterinterface::Characterinterface()
 {
+	this->currentlyActive = nullptr;
 }
 
 Characterinterface::~Characterinterface()
@@ -10,5 +11,10 @@ Characterinterface::~Characterinterface()
 }
 
 void Characterinterface::create(string theCharacter)
+{
+	this->currentlyActive = charRepository.getCharacter(theCharacter);
+}
+
+void Characterinterface::activate()
 {
 }
