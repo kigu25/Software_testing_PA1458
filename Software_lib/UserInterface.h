@@ -15,6 +15,8 @@ public:
 
 	string userInputsString();
 
+	string userInputsChoice();
+
 	void showMessage(string theString);
 
 private:

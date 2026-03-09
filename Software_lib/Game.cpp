@@ -21,7 +21,7 @@ void Game::selectGameObject(string name) {
 
 	currentObj = scene1.getTheObject(name);
 	if (currentObj != nullptr) {
-		cout << currentObj->listinteractionTypes();
+		ui.showMessage(currentObj->listinteractionTypes());
 	}
 }
 
@@ -111,10 +111,15 @@ void Game::handleChoice(int choice)
 	}
 
 	case 2:
+		string inputObject = ui.userInputsString();
+		selectGameObject(inputObject);
+		this->currentInteraction = ui.userInputsChoice();
+		
 
+		ui.showMessage(currentObj->listCurrentInteractionOptions(currentInteraction));
+		this->currentOption = ui.userInputsChoice();
+
+		currentObj->startinteraction(currentInteraction, currentOption);
 		break;
-
-
-
 	}
 }

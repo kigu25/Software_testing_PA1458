@@ -14,7 +14,7 @@ public:
 	string listinteractionTypes();
 
 	bool startinteraction(string theInteraction, string theOption);
-	void listCurrentInteractionOptions();
+	string listCurrentInteractionOptions(string theInteraction);
 
 	void setCurrentInteractionOptions(string theOptions);
 	void startCurrentInteraction();

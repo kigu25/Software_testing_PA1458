@@ -20,6 +20,8 @@ int Userinterface::showMainMenu()
 
 	cout << "1. Initate conversation with character" << endl;
 
+	cout << "2. Interact with object" << endl;
+
 	cout << "0. Exit program" << endl;
 
 	cout << ":";
@@ -33,12 +35,25 @@ string Userinterface::userInputsString()
 	clearScreen();
 	string characterName;
 
-	cout << "Enter the character's name: ";
+	cout << "Enter the character/object name:  ";
 
 	cin >> characterName;
 
 	return characterName;
 }
+
+string Userinterface::userInputsChoice()
+{
+	string Option;
+
+	cout << '\n' << "Enter the option :  ";
+
+	cin >> Option;
+
+	return Option;
+}
+
+
 
 void Userinterface::showMessage(string theString)
 {

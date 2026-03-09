@@ -11,6 +11,7 @@ Gameobject::Gameobject(const string& name)
 	this->objectName = name;
 
 	this->isOpen = false;
+	this->currentInteraction = nullptr;
 
 	this->interaction_vector.push_back(new Opendoor("Open"));
 	this->interaction_vector.push_back(new closeDoor("Close"));
@@ -52,11 +53,20 @@ bool Gameobject::startinteraction(string theInteraction, string theOption)
 	return false;
 }
 
-void Gameobject::listCurrentInteractionOptions()
-{
-	for (string option : currentInteraction->getOptions())
+string Gameobject::listCurrentInteractionOptions(string theInteraction) {
+
+	stringstream ss;
+
+	for (Interactions* interaction : interaction_vector)
 	{
-		cout << option << endl;
+		if (interaction->getInteraction() == theInteraction)
+		{
+			for (string option : interaction->getOptions())
+			{
+				ss << option << '\n';
+			}
+			return ss.str();
+		}
 	}
 }
 
