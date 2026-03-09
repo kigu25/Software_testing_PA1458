@@ -23,11 +23,12 @@ string Characterinterface::activate()
 	InputSanitiser sanitiser;
 
 	bool interacting = true;
-
+	cin.ignore(1000, '\n');
 	while (interacting)
 	{
 		cout << "\nYou:";
 		string theQuery;
+		
 		getline(cin, theQuery);
 
 		if (theQuery == "exit")
@@ -43,7 +44,10 @@ string Characterinterface::activate()
 			cout << "Invalid input.\n";
 			continue;
 		}
-
+		else {
+			currentlyActive->query(safeQuery);
+		}
+	
 		string formatted = currentlyActive->query(safeQuery);
 
 		cout << formatted << endl;
