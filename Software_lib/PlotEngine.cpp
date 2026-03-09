@@ -10,5 +10,5 @@ PlotEngine::~PlotEngine() {
 
 string PlotEngine::getPlotState() {
 
-
+	return "";
 }
