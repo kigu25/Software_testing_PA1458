@@ -14,7 +14,7 @@ TEST(GameObject_test, ListInteractionTypes) {
 
 	Gameobject Obj("Door2");
 
-	ASSERT_EQ(Obj.listinteractionTypes(), "OpenClose"); // We need to write the asserted line in this weired way since the listInteractionTypes() returns a string, mby change to return vector?
+	ASSERT_EQ(Obj.listinteractionTypes(), "Open\nClose\n"); // We should use return a vector instead of string from listinteractionTypes so we can skip the \n
 }
 
 

@@ -35,7 +35,7 @@ string Userinterface::userInputsString()
 	clearScreen();
 	string characterName;
 
-	cout << "Enter the character/object name:  ";
+	cout << "Enter the character/object name: ";
 
 	cin >> characterName;
 
@@ -46,13 +46,12 @@ string Userinterface::userInputsChoice()
 {
 	string Option;
 
-	cout << '\n' << "Enter the option :  ";
+	cout << '\n' << "Enter the option: ";
 
 	cin >> Option;
 
 	return Option;
 }
-
 
 
 void Userinterface::showMessage(string theString)
@@ -62,7 +61,6 @@ void Userinterface::showMessage(string theString)
 	cin.ignore(1000, '\n');
 	cin.get();
 }
-
 
 
 void Userinterface::clearScreen()

@@ -26,7 +26,7 @@ string Gameobject::listinteractionTypes() // Bör eventuellt ändra returtyp till 
 	stringstream ss;
 	for (Interactions* interaction : interaction_vector)
 	{
-		ss << interaction->getInteraction();
+		ss << interaction->getInteraction() << '\n';
 	}	
 	return ss.str();
 
