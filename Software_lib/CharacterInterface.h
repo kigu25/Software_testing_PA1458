@@ -1,6 +1,8 @@
 #pragma once
 #include "Character.h"
 #include "CharacterRepository.h"
+#include "InputSanitiser.h"
+#include <iostream>
 #include <string>
 using namespace std;
 
