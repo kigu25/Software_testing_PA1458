@@ -23,7 +23,7 @@ void Userinterface::start()
 //The loop itself
 void Userinterface::interFaceLoop()
 {
-	while (run = true)
+	while (run == true)
 	{
 		clearScreen();
 
