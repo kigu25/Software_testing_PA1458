@@ -21,8 +21,6 @@ string Characterinterface::activate()
 		return "No character currently selected.";
 
 	InputSanitiser sanitiser;
-	InteractionEngine interaction;
-	PlotEngine plot;
 
 	bool interacting = true;
 
@@ -47,9 +45,6 @@ string Characterinterface::activate()
 		}
 
 		string theResponse = currentlyActive->query(safeQuery);
-		string parsedQuery = interaction.parseQuery(safeQuery);
-		string plotState = plot.getPlotState();
-		string formatted = interaction.formatResponse(theResponse, parsedQuery);
 
 		cout << formatted << endl;
 	}

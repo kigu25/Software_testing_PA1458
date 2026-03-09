@@ -2,8 +2,6 @@
 #include "Character.h"
 #include "CharacterRepository.h"
 #include "InputSanitiser.h"
-#include "InteractionEngine.h"
-#include "PlotEngine.h"
 #include <iostream>
 #include <string>
 using namespace std;
