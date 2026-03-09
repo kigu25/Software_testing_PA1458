@@ -1,4 +1,6 @@
 #pragma once
+#include "InteractionEngine.h"
+#include "PlotEngine.h"
 #include <string>
 using namespace std;
 

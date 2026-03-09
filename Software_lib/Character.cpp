@@ -16,6 +16,15 @@ string Character::getInitialGreeting() {
 }
 
 string Character::query(string safeQuery) {
-    return "";
+    InteractionEngine interaction;
+    PlotEngine plot;
+
+    string parsedQuery = interaction.parseQuery(safeQuery);
+    string nextConversationOptions = plot.getPlotState();
+    string theResponse = parsedQuery;
+
+    string formatted = interaction.formatResponse(theResponse, nextConversationOptions);
+
+    return formatted;
 }
 

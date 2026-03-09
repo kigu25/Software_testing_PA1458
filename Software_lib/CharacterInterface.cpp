@@ -17,6 +17,36 @@ void Characterinterface::create(string theCharacter)
 
 string Characterinterface::activate()
 {
-	string response = this->currentlyActive->getInitialGreeting();
-	return response;
+	if (currentlyActive == nullptr)
+		return "No character currently selected.";
+
+	InputSanitiser sanitiser;
+
+	bool interacting = true;
+
+	while (interacting)
+	{
+		cout << "\nYou:";
+		string theQuery;
+		getline(cin, theQuery);
+
+		if (theQuery == "exit")
+		{
+			interacting = false;
+			break;
+		}
+
+		string safeQuery = sanitiser.sanitiseInput(theQuery);
+
+		if (safeQuery.empty())
+		{
+			cout << "Invalid input.\n";
+			continue;
+		}
+
+		string formatted = currentlyActive->query(safeQuery);
+
+		cout << formatted << endl;
+	}
+	return "Interaction ended.";
 }
