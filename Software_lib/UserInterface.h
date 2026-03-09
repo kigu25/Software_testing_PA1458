@@ -11,18 +11,14 @@ public:
 	Userinterface();
 	~Userinterface();
 
-	void start();
-	void interFaceLoop();
+	int showMainMenu();
+
+	string userInputsString();
 
 private:
 
 	bool run;
 	int menuChoice;
-
-	void showMainMenu();
-
-	void menuChoiceHandler(int menuChoice);
-
 
 	void clearScreen();
 

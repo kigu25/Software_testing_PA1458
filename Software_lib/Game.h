@@ -2,6 +2,7 @@
 #include <string>
 #include "Scene.h"
 #include "PhoneBook.h"
+#include "UserInterface.h"
 using namespace std;
 
 class Game
@@ -20,6 +21,8 @@ public:
 
 	Gameobject* getCurrentObj();
 
+	void run();
+
 private:
 
 	Scene scene1;
@@ -27,4 +30,8 @@ private:
 	string currentInteraction;
 	string currentOption;
 	PhoneBook phonebook;
+	Userinterface ui;
+	bool running;
+
+	void handleChoice(int choice);
 };

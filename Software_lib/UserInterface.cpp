@@ -12,64 +12,36 @@ Userinterface::~Userinterface()
 }
 
 
-//This will be called form main to start
-void Userinterface::start()
-{
-
-	interFaceLoop();
-}
-
-
-//The loop itself
-void Userinterface::interFaceLoop()
-{
-	while (run == true)
-	{
-		clearScreen();
-
-		showMainMenu();
-		cout << '\n' << "What do you want to do? : ";
-		cin >> this->menuChoice;
-
-		menuChoiceHandler(menuChoice);
-
-	}
-}
-
-void Userinterface::showMainMenu()
-{
-
+int Userinterface::showMainMenu()
+{	
 	// ALl menuchoice put here.
+	clearScreen();
 
+	cout << "What do you want to do?" << endl;
 
+	cout << "1. Initate conversation with character" << endl;
 
 	cout << "0. Exit program" << endl;
+
+	cout << ":";
+
+	cin >> menuChoice;
+	return menuChoice;
 }
 
-
-// Handle user-choices
-void Userinterface::menuChoiceHandler(int menuChoice)
+string Userinterface::userInputsString()
 {
-	switch (menuChoice)
-	{
-	case 0:
-		this->run = false;
+	clearScreen();
+	string characterName;
 
-		break;
+	cout << "Enter the character's name: ";
 
-	case 1:
+	cin >> characterName;
 
-		break;
-	
-
-	case 2:
-
-		break;
-
-
-
-	}
+	return characterName;
 }
+
+
 
 void Userinterface::clearScreen()
 {

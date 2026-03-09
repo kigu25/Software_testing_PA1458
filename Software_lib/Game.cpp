@@ -7,6 +7,7 @@ Game::Game() {
 	this->currentObj = nullptr;
 	this->currentInteraction = "";
 	this->currentOption = "";
+	this->running = true;
 
 }
 
@@ -70,4 +71,45 @@ string Game::getCurrentOption()
 Gameobject* Game::getCurrentObj()
 {
 	return currentObj;
+}
+
+void Game::run()
+{
+	while (running)
+	{
+		int choice = ui.showMainMenu();
+
+		if (choice == 0)
+		{
+			this->running = false;
+		}
+
+		else {
+			handleChoice(choice);
+		}
+	}
+}
+
+void Game::handleChoice(int choice)
+{
+	switch (choice)
+	{
+	case 0:
+		this->running = false;
+		break;
+
+	case 1:
+	{
+		string characterChoice = ui.userInputsString();
+		initiateConversation(characterChoice);
+		break;
+	}
+
+	case 2:
+
+		break;
+
+
+
+	}
 }
