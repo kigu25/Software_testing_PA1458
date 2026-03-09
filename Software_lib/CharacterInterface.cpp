@@ -8,3 +8,7 @@ Characterinterface::Characterinterface()
 Characterinterface::~Characterinterface()
 {
 }
+
+void Characterinterface::create(string theCharacter)
+{
+}

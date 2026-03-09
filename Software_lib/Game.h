@@ -3,6 +3,8 @@
 #include "Scene.h"
 #include "PhoneBook.h"
 #include "UserInterface.h"
+#include "CharacterInterface.h"
+
 using namespace std;
 
 class Game
@@ -28,10 +30,15 @@ private:
 	Scene scene1;
 	Scene Inventory;
 	Gameobject* currentObj;
-	string currentInteraction;
-	string currentOption;
 	PhoneBook phonebook;
 	Userinterface ui;
+	Characterinterface CharInterface;
+
+
+	string currentInteraction;
+	string currentOption;
+	
+	
 	bool running;
 
 	void handleChoice(int choice);

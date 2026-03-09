@@ -58,7 +58,10 @@ void Game::initiateConversation(string theCharacter) {
 
 	string contact = phonebook.getContactMethod(theCharacter);
 	if (contact.empty()) {
-		return;
+		ui.showMessage(theCharacter + " is not in your phonebook!");
+	}
+	else {
+		CharInterface.create(theCharacter);
 	}
 }
 
