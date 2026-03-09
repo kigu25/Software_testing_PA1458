@@ -3,7 +3,6 @@
 
 Userinterface::Userinterface()
 {
-	this->run = true;
 	this->menuChoice = -1;
 }
 
@@ -23,7 +22,7 @@ int Userinterface::showMainMenu()
 
 	cout << "0. Exit program" << endl;
 
-	cout << ":";
+	cout << ": ";
 
 	cin >> menuChoice;
 	return menuChoice;
@@ -39,6 +38,14 @@ string Userinterface::userInputsString()
 	cin >> characterName;
 
 	return characterName;
+}
+
+void Userinterface::showMessage(string theString)
+{
+	cout << theString << endl;
+	cout << "\n" << "Press enter to continue...";
+	cin.ignore(1000, '\n');
+	cin.get();
 }
 
 

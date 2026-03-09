@@ -15,9 +15,10 @@ public:
 
 	string userInputsString();
 
+	void showMessage(string theString);
+
 private:
 
-	bool run;
 	int menuChoice;
 
 	void clearScreen();
