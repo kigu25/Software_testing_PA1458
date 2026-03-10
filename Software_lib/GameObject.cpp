@@ -21,7 +21,7 @@ Gameobject::~Gameobject()
 {
 }
 
-string Gameobject::listinteractionTypes() // Bör eventuellt ändra returtyp till typ <vector*> eller något för att få ett bättre test med index istället för string
+string Gameobject::listinteractionTypes()
 {
 	stringstream ss;
 	for (Interactions* interaction : interaction_vector)
